@@ -1,0 +1,96 @@
+* {
+  background-color: black;
+}
+
+.confetti {
+  width: 1rem;
+  height: 1rem;
+  position: absolute;
+  display: inline-block;
+  z-index: 150;
+}
+
+.confetti .rotate3D {
+  animation: pulse 1s infinite both ease-in-out;
+}
+
+.confetti .anime {
+  animation: drifty 1s infinite alternate both ease-in-out;
+  background: currentColor;
+  transform: skewY(10deg);
+  width: 1rem;
+  height: 1rem;
+}
+
+@keyframes drifty {
+  0% {
+    transform: skewY(10deg) translate3d(-250%, 0, 0);
+  }
+  100% {
+    transform: skewY(-12deg) translate3d(250%, 0, 0);
+  }
+}
+@keyframes pulse {
+  0% {
+    transform: rotateX(0);
+  }
+  100% {
+    transform: rotateX(359deg);
+  }
+}
+
+.confetti:nth-of-type(3n) {
+  color: red;
+}
+.confetti:nth-of-type(3n+1) {
+  color: yellow;
+}
+.confetti:nth-of-type(3n+2) {
+  color: green;
+}
+
+.confetti:nth-of-type(5n) {
+  color: red;
+}
+.confetti:nth-of-type(5n+1) {
+  color: yellow;
+}
+.confetti:nth-of-type(5n+2) {
+  color: blue;
+}
+.confetti:nth-of-type(5n+3) {
+  color: orange;
+}
+.confetti:nth-of-type(5n+4) {
+  color: green;
+}
+
+.confetti:nth-of-type(7n) .anime {
+  animation-delay: -0.6s;
+  animation-duration: 2.25s;
+}
+.confetti:nth-of-type(7n + 1) .anime {
+  animation-delay: -0.9s;
+  animation-duration: 3.5s;
+}
+.confetti:nth-of-type(7n + 2) .anime {
+  animation-delay: -0.11s;
+  animation-duration: 1.95s;
+}
+.confetti:nth-of-type(7n + 3) .anime {
+  animation-delay: -0.3s;
+  animation-duration: .85s;
+}
+.confetti:nth-of-type(7n + 4) .anime {
+  animation-delay: -.4s;
+  animation-duration: 2.5s;
+}
+.confetti:nth-of-type(7n + 5) .anime {
+  animation-delay: -.5s;
+  animation-duration: 1.75s;
+}
+.confetti:nth-of-type(7n + 6) .anime {
+  animation-delay: -.6s;
+  animation-duration: 1.5s;
+}
+
