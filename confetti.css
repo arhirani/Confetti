@@ -5,9 +5,8 @@
 .confetti {
   width: 1rem;
   height: 1rem;
-  position: absolute;
   display: inline-block;
-  z-index: 150;
+  position: absolute;  
 }
 
 .confetti .rotate3D {
@@ -82,15 +81,15 @@
   animation-duration: .85s;
 }
 .confetti:nth-of-type(7n + 4) .anime {
-  animation-delay: -.4s;
+  animation-delay: -0.4s;
   animation-duration: 2.5s;
 }
 .confetti:nth-of-type(7n + 5) .anime {
-  animation-delay: -.5s;
+  animation-delay: -0.5s;
   animation-duration: 1.75s;
 }
 .confetti:nth-of-type(7n + 6) .anime {
-  animation-delay: -.6s;
+  animation-delay: -0.6s;
   animation-duration: 1.5s;
 }
 
